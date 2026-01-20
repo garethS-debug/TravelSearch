@@ -6,6 +6,7 @@ header {
   gap: 16px;
   flex-wrap: wrap; /* allow wrapping on very small viewports */
   box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,0.08); 
 }
 
 /* The styling for the group of 3 buttons */
@@ -80,6 +81,51 @@ header {
   height: auto;
   display: block;
 }
+
+
+.hero__visual {
+  position: relative;
+  justify-self: end; /* keeps the visual on the right column */
+  align-self: center;
+}
+
+
+.hero__visual img{
+  position: relative; /* remove absolute positioning */
+  width: 100%;
+  height: auto;
+  max-width: 200px; /* constrain size so it scales down */
+  display: block;
+  margin: 0;
+  padding-right: 150px;
+
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(16px, 4vw, 48px);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.hero-text {
+  padding-left: 80px;
+  padding-bottom: 200px;
+}
+
+.hero-text  {
+ font-size: 16px;
+}
+
+.hero-highlight {
+  color: #FF6F61;
+   font-style: italic;
+}
+
 
 /* Placing the responsive functions to remind me to fill them later*/
 @media (max-width: 900px) {

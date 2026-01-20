@@ -44,14 +44,14 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  margin-left: auto; /* puts the user buttons on the right */
-  gap: clamp(8px, 2.5vw, 32px); 
+  margin-left: auto; /* push the whole group to the far right */
+  gap: clamp(16px, 7vw, 64px); /* increased responsive spacing between nav and user groups */
   flex: 0 0 auto;
 }
 
 /* this is the right group (2 buttons) */
 .user-buttons {
-  margin-left: auto; /* puts the user buttons on the right */
+  /* margin-left: auto;  */
   display: flex;
   gap: 10px;
   align-items: center;

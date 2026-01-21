@@ -4,6 +4,14 @@ body {
 
 }
 
+/* Defining CSS variables for consistent theming throughout the stylesheet */
+:root{
+
+   
+    --contact-form-bg: #bcbcbc; /* contact form background color */
+}
+
+
 header {
   background-color: white;
   display: flex;
@@ -242,6 +250,11 @@ justify-content: flex-start;
   font-family: "Dosis", sans-serif;
 }
 
+.contact-btn {
+  transition: all 0.3s ease-in-out;
+  font-family: "Dosis", sans-serif;
+}
+
 .button-container {
     margin: 0 0 0 30px;
   display: flex; 
@@ -281,6 +294,8 @@ input:hover {
   outline: 1px solid lightgrey;
 } */
 
+
+/*-- About us section --*/
 
 
 /* Placing the responsive functions to remind me to fill them later*/

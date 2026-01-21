@@ -296,8 +296,14 @@ input:hover {
 
 
 /*-- About us section --*/
+.about-section {
+  padding: 20px 90px 20px 90px;
+  display: flex;
+}
 
+.about-title{
 
+}
 /* Placing the responsive functions to remind me to fill them later*/
 @media (max-width: 900px) {
   .test {
@@ -437,6 +443,14 @@ input:hover {
   cursor: pointer;
   background: var(--contact-btn-bg-hover);
   transform: translateY(-2px);
+}
+
+/*about*/
+
+.about-title{
+    color: #FF6F61;
+   font-style: italic;
+   font-size: 60px;;
 }
 
 

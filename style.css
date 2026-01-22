@@ -486,7 +486,7 @@ footer {
   transform: scale(1.05);
 }
 
-/* @media (max-width: 520px) {
+@media (max-width: 520px) {
   .hero-text { padding-left: 20px; padding-bottom: 120px; }
   .hero-title-highlighted, .hero-highlight { font-size: 36px; }
 }
@@ -499,6 +499,6 @@ footer {
    flex-direction: column;
    justify-content: center;
   }
-} */
+}
 
 

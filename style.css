@@ -1,19 +1,21 @@
 
 body {
-  background-color: #f5f5f5; 
+  background-color: var(--bg); 
 
 }
 
 /* Defining CSS variables for consistent theming throughout the stylesheet */
 :root{
-
-   
     --contact-form-bg: #bcbcbc; /* contact form background color */
-}
+    --bg: #F5F5F5; /* general background color */
+    --header-bg: #ffffff; /* header background color */
+    --hover: #ff6f61; /* hover effect color */
+    --border: rgba(0,0,0,0.08); /* border color */
+  }
 
 
 header {
-  background-color: white;
+  background-color: var(--header-bg);
   display: flex;
   align-items: center;
   justify-content: flex-start; 
@@ -21,7 +23,7 @@ header {
   gap: 16px;
   flex-wrap: wrap; /* allow wrapping on very small viewports */
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(0,0,0,0.08); 
+  border-bottom: 1px solid var(--border); 
 }
 
 
@@ -52,17 +54,24 @@ header {
 /* nav buttons */
 .main-nav {
   display: flex;
+ flex-wrap: wrap;
+ align-items: center;
   gap: 10px;
   align-items: center;
 }
 
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
 
 /* middle group (3 buttons) */
 .main-nav {
   display: flex;
   align-items: center;
-  margin-left: auto; /* push the whole group to the far right */
-  gap: clamp(16px, 7vw, 64px); /* increased responsive spacing between nav and user groups */
+  margin-left: auto; 
+  gap: clamp(16px, 7vw, 64px); 
   flex: 0 0 auto;
 }
 
@@ -97,7 +106,10 @@ header {
   height: auto;
   display: block;
 }
-
+.user-buttons {
+  display: flex;
+  gap: 10px; 
+}
 
 .hero__visual {
   position: relative;
@@ -107,7 +119,7 @@ header {
 
 
 .hero__visual img{
-  position: relative; /* remove absolute positioning */
+  position: relative; 
   width: 100%;
   height: auto;
   max-width: 200px; /* constrain size so it scales down */
@@ -301,9 +313,7 @@ input:hover {
   display: flex;
 }
 
-.about-title{
 
-}
 /* Placing the responsive functions to remind me to fill them later*/
 @media (max-width: 900px) {
   .test {
@@ -394,10 +404,10 @@ input:hover {
 }
 
 .contact-form {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: stretch; /* Ensures inputs stretch to full width */
 }
 
 .form-header {
@@ -450,11 +460,36 @@ input:hover {
 .about-title{
     color: #FF6F61;
    font-style: italic;
-   font-size: 60px;;
+   font-size: 30px;;
 }
 
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg);
+  color: white;
+}
+
+/*hover */
+.header-button:hover {
+  background-color: var(--hover);
+  transform: scale(1.05);
+}
 
 @media (max-width: 520px) {
   .hero-text { padding-left: 20px; padding-bottom: 120px; }
   .hero-title-highlighted, .hero-highlight { font-size: 36px; }
+}
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .nav-buttons {
+   flex-direction: column;
+   justify-content: center;
+  }
 }

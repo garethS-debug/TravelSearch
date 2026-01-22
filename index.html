@@ -3,9 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
 </head>
 <body>
     
+    <header>
+        
+       
+        <div class="logo">
+        <a href="./index.html"><img src="/img/tempLogo.png" alt="Logo"></a>
+        </div>
+        
+         <div class="main-nav">
+        <div class="nav-buttons">
+        <!-- <button type="button" class="header-button">Home</button>
+        <button type="button" class="header-button">Flight Search</button>
+        <button type="button" class="header-button">About</button>
+        <button type="button" class="header-button">Contact</button>
+         -->
+             <a class="header-button" href="index.html">Home</a>
+        <a class="header-button" href="flight-search.html">Flight Search</a>
+        <a class="header-button" href="about.html">About</a>
+        <a class="header-button" href="contact.html">Contact</a>
+    
+       </div>
+
+        <div class="user-buttons">
+        
+        <button type="button" class="icon-btn"><img src="/img/AddUserFriend.png" alt="User"></button>
+        <button type="button" class="icon-btn"><img src="/img/MainIcon.png" alt="User"></button>
+        </div>
+        </div>
+     
+
+    </header>   
+
+    <section class="hero">
+    <div class = "hero-text">
+    <h1 class = "hero-title">The Journey is Part of the </h1>
+    <h1 class = "hero-title-highlighted"><span class = "hero-highlight">Adventure</span></h1>
+    
+    
+    
+    </div>
+
+
+            <div class="hero__visual">
+            <img id="homepage_pidgeon" src="./img/homepage_pidgeon.png" alt="Illustration" />
+            </div>
+    </section>
+
+
+    <section class = "test">    
+    <section class = "flight-input-section">
+
+     <!-- <div class="search-horizontal-grid">
+  <div>From</div>
+  <div>To</div>
+  <div>Departure</div>
+  <div>Return</div>
+  <div>Travellers</div>
+  <div>Return?</div>
+</div>
+
+     <div class="search-horizontal-grid">
+        <div class="input-box">
+            <input type="text" placeholder="City or Airport" class="flight-input">
+            </div>
+ -->
+<section class="search-horizontal-grid">
+  <div class="input-box">
+    <div class="input-title-text">From</div>
+    <!-- <input type="text" placeholder="From" class="flight-input"> -->
+     <input class="input" name="text"  type="search" placeholder="London Heathrow (LHR)">
+  </div>
+  <div class="input-box">
+    <div class="input-title-text">To</div>
+         <input class="input" name="text"  type="search" placeholder="Oslo Gardermoen (OSL)">
+  </div>
+  <div class="input-box">
+     <div class="input-title-text">Departure</div>
+    <input class="input" name="text"  type="search" placeholder="15 Mar 2024">
+  </div>
+  <div class="input-box">
+    <div class="input-title-text">Return</div>
+    <input class="input" name="text"  type="search" placeholder="22 Mar 2024">
+  </div>
+  <div class="input-box">
+     <div class="input-title-text">Travellers</div>
+    <input type="number" class="input" placeholder="1" class="flight-input" min="1">
+  </div>
+  <div class="input-box">
+    <label>
+        <div class="input-title-text">Return?</div>
+      <input type="checkbox" class="flight-checkbox">
+    </label>
+  </div>
+  </section>
+
+</div>
+
+    </section>
+<div class="button-container">
+  <button class="btn">LHR to OS 15 Mar to 22 Mar</button>
+</div>
+ </section>   
+      <!-- rounded overlay box -->
+
+<footer>
+  <p>Author: Garet</p>
+  <p><a href="mailto:garet@example.com">garet@example.com</a></p>
+</footer>
+
 </body>
+
+
+
 </html>

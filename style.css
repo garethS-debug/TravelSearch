@@ -4,6 +4,8 @@ body {
 
 }
 
+
+
 /* Defining CSS variables for consistent theming throughout the stylesheet */
 :root{
     --contact-form-bg: #bcbcbc; /* contact form background color */
@@ -13,7 +15,10 @@ body {
     --border: rgba(0,0,0,0.08); /* border color */
   }
 
-
+html, body {
+  height: 100%;
+  margin: 0;
+}
 header {
   background-color: var(--header-bg);
   display: flex;
@@ -176,7 +181,8 @@ header {
   display: flex; 
   align-items: center ; 
   gap: 0px;
-   align-items: stretch; 
+   align-items: stretch;
+    
 }
 
 
@@ -480,7 +486,7 @@ footer {
   transform: scale(1.05);
 }
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
   .hero-text { padding-left: 20px; padding-bottom: 120px; }
   .hero-title-highlighted, .hero-highlight { font-size: 36px; }
 }
@@ -493,4 +499,6 @@ footer {
    flex-direction: column;
    justify-content: center;
   }
-}
+} */
+
+

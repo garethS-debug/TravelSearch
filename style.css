@@ -88,6 +88,7 @@ header {
 .logo {
   flex: 0 0 auto;
   margin-right: 0;
+  scale: calc(0.9);
 }
 
 /* this removes the defualt button style */
